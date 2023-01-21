@@ -47,10 +47,33 @@ html {
 }
 body {
   font-size: 1.6rem;
+  color: white;
+  max-width: 1440px;
   padding: 0;
   margin: 0 auto;
-  max-width: 1440px;
+}
+a {
   color: white;
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+.btn {
+  font-family: 'Ubutnu', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  transition: 0.3s linear;
+}
+.btn:hover {
+  background-color: transparent;
+  text-decoration: none;
 }
 .semi-bold {
   font-weight: 600;
@@ -85,11 +108,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: 691px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 @media only screen and (min-resolution: 2dppx) {
   /* Retina */
@@ -102,11 +125,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 130px;
 }
 .header-title {
   text-align: center;
   font-size: 4rem;
   line-height: calc(110.8% + 9px);
   padding-top: 100px;
+}
+.header .cta {
+  margin-top: 50px;
+}
+.footnote p {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--grey);
+  font-size: 1.2rem;
+  padding-top: 10px;
 }
 /* -- Desktop Styles End */
