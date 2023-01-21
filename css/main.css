@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Organetto';
+  src: url('./fonts/Organetto-RegularExt.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Organetto';
+  src: url('./fonts/Organetto-UltraBoldSemiExt.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Organetto';
+  src: url('./fonts/Organetto-UltraBoldExt.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --red: #a10a0b;
+  --grey: #a6a6a6;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Organetto', sans-serif;
+  line-height: 1.4;
+  box-sizing: border-box;
+  background-color: black;
+}
+body {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  color: white;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+
+/* -- Mobile Styles     */
+
+/* -- Mobile Styles End */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* -- Sample CSS for desktop banner only */
+.header {
+  background-image: url('../images/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-resolution: 2dppx) {
+  /* Retina */
+  .header {
+    background-image: url('../images/header@2x.png');
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-title {
+  text-align: center;
+  font-size: 4rem;
+  line-height: calc(110.8% + 9px);
+  padding-top: 100px;
+}
+/* -- Desktop Styles End */
